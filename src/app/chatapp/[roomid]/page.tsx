@@ -90,7 +90,7 @@ export default function Page({ params }: { params: { roomid: string } }) {
   
   const openWhatsApp = () => {
     const encodedText = encodeURIComponent(
-      `${params.roomid}`
+      `https://personal-chat-ashen.vercel.app/${params.roomid}`
     );
     const whatsappDesktopUrl = `https://wa.me/?text=${encodedText}`;
     window.open(whatsappDesktopUrl, "_blank");
